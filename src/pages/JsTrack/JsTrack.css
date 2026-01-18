@@ -1,0 +1,80 @@
+.track-container {
+  max-width: 1400px;
+  padding: 2rem;
+  width: 100%;
+}
+
+.track-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.track-logo {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.track-logo-image {
+  max-width: 120px;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.track-title {
+  font-size: 3rem;
+  color: #8B0000;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.track-description {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.track-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .levels-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .track-title {
+    font-size: 2rem;
+  }
+
+  .track-logo {
+    font-size: 3rem;
+  }
+
+  .levels-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .track-description {
+    font-size: 1rem;
+  }
+}
+

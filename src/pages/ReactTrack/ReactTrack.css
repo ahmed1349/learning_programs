@@ -1,0 +1,55 @@
+.track-container {
+  max-width: 900px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.track-header {
+  margin-bottom: 2rem;
+}
+
+.track-logo {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.track-logo-image {
+  max-width: 120px;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.track-title {
+  font-size: 3rem;
+  color: #8B0000;
+  font-weight: 700;
+}
+
+.track-description {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.track-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .track-title {
+    font-size: 2rem;
+  }
+
+  .track-logo {
+    font-size: 3rem;
+  }
+}
+

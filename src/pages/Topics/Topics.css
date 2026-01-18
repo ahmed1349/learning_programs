@@ -1,0 +1,31 @@
+.courses-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+.courses-title {
+  font-size: 2.5rem;
+  color: #8B0000;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .courses-title {
+    font-size: 2rem;
+  }
+}
+
