@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import CourseCard from '../../components/cards/CourseCard/CourseCard'
 import Button from '../../components/ui/Button/Button'
+import Navbar from '../../components/layout/Navbar/Navbar'
 import { COURSES } from '../../utils/constants'
 import './Topics.css'
 
@@ -9,6 +10,7 @@ function Topics() {
 
   return (
     <div className="app">
+      <Navbar />
       <div className="courses-container">
         <h2 className="courses-title">Choose Your Learning Path</h2>
         <div className="courses-grid">

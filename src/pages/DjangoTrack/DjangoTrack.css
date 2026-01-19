@@ -1,6 +1,7 @@
 .track-container {
   max-width: 900px;
   padding: 2rem;
+  padding-top: 6rem;
   text-align: center;
 }
 
@@ -33,6 +34,10 @@
 }
 
 @media (max-width: 768px) {
+  .track-container {
+    padding-top: 8rem;
+  }
+
   .track-title {
     font-size: 2rem;
   }

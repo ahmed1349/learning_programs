@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import Button from '../../components/ui/Button/Button'
+import Navbar from '../../components/layout/Navbar/Navbar'
 import './DjangoTrack.css'
 
 function DjangoTrack() {
@@ -7,6 +8,7 @@ function DjangoTrack() {
 
   return (
     <div className="app">
+      <Navbar />
       <div className="track-container">
         <div className="track-header">
           <div className="track-logo">🐍</div>

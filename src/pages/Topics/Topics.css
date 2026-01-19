@@ -2,6 +2,7 @@
   width: 100%;
   max-width: 1200px;
   padding: 2rem;
+  padding-top: 6rem;
 }
 
 .courses-title {
@@ -20,6 +21,10 @@
 }
 
 @media (max-width: 768px) {
+  .courses-container {
+    padding-top: 8rem;
+  }
+
   .courses-grid {
     grid-template-columns: 1fr;
   }
