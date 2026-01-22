@@ -10,17 +10,23 @@
   margin-bottom: 2rem;
 }
 
+.track-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
 .track-logo {
-  font-size: 5rem;
-  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .track-logo-image {
-  max-width: 120px;
-  max-height: 120px;
+  max-width: 80px;
+  max-height: 80px;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -30,7 +36,7 @@
   font-size: 3rem;
   color: #8B0000;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 .track-description {
@@ -66,12 +72,17 @@
     padding-top: 8rem;
   }
 
+  .track-header-content {
+    gap: 1rem;
+  }
+
   .track-title {
     font-size: 2rem;
   }
 
-  .track-logo {
-    font-size: 3rem;
+  .track-logo-image {
+    max-width: 60px;
+    max-height: 60px;
   }
 
   .levels-grid {

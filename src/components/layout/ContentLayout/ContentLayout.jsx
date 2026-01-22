@@ -10,7 +10,8 @@ function ContentLayout({
   backPath, 
   backLabel,
   color = '#61DAFB',
-  basePath 
+  basePath,
+  trackType = 'react'
 }) {
   const location = useLocation()
   const navigate = useNavigate()
@@ -27,6 +28,7 @@ function ContentLayout({
           backPath={backPath}
           backLabel={backLabel}
           color={color}
+          trackType={trackType}
         />
 
         <main className="content-main">

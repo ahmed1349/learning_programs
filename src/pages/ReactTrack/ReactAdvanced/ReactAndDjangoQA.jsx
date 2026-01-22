@@ -310,3 +310,5 @@ python manage.py collectstatic`
 
 export default ReactAndDjangoQA
 
+
+

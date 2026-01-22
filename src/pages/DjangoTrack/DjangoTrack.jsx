@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import Button from '../../components/ui/Button/Button'
 import LevelCard from '../../components/cards/LevelCard/LevelCard'
 import Navbar from '../../components/layout/Navbar/Navbar'
+import djangoLogo from '../../assets/django.png'
 import './DjangoTrack.css'
 
 function DjangoTrack() {
@@ -36,9 +37,9 @@ function DjangoTrack() {
 
   const handleLevelStart = (levelId) => {
     const routes = {
-      1: '/django/intro',
-      2: '/django/intermediate',
-      3: '/django/advanced',
+      1: '/django/intro/django-basics',
+      2: '/django/intermediate/intermediate-qa',
+      3: '/django/advanced/advanced-qa',
     }
     navigate(routes[levelId] || '/django')
   }
@@ -48,12 +49,13 @@ function DjangoTrack() {
       <Navbar />
       <div className="track-container">
         <div className="track-header">
-          <div className="track-logo">🐍</div>
-          <h1 className="track-title">Django Track</h1>
+          <div className="track-header-content">
+            <div className="track-logo">
+              <img src={djangoLogo} alt="Django logo" className="track-logo-image" />
+            </div>
+            <h1 className="track-title">Django Track</h1>
+          </div>
         </div>
-        <p className="track-description">
-          Choose your learning level and start your Django journey. Progress from basics to advanced concepts.
-        </p>
         
         <div className="levels-grid">
           {levels.map((level) => (

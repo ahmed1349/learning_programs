@@ -159,3 +159,5 @@ CORS_ALLOWED_ORIGINS = [
 
 export default ReactAndDjango
 
+
+

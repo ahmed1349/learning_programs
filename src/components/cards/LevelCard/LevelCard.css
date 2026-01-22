@@ -52,6 +52,13 @@
   background: #FFFFFF;
 }
 
+.level-card:active {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 
+    0 8px 24px rgba(139, 0, 0, 0.15),
+    0 4px 12px rgba(139, 0, 0, 0.1);
+}
+
 .level-card:hover::before {
   transform: scaleX(1);
 }

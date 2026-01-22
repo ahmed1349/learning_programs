@@ -49,14 +49,14 @@ function JsTrack() {
       <Navbar />
       <div className="track-container">
         <div className="track-header">
-          <div className="track-logo">
-            <img src={jsLogo} alt="JavaScript logo" className="track-logo-image" />
+          <div className="track-header-content">
+            <div className="track-logo">
+              <img src={jsLogo} alt="JavaScript logo" className="track-logo-image" />
+            </div>
+            <h1 className="track-title">JavaScript Track</h1>
           </div>
-          <h1 className="track-title">JavaScript Track</h1>
         </div>
-        <p className="track-description">
-          Choose your learning level and start your JavaScript journey. Progress from basics to advanced concepts.
-        </p>
+        
         
         <div className="levels-grid">
           {levels.map((level) => (

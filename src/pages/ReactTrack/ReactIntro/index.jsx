@@ -5,14 +5,44 @@ import reactLogo from '../../../assets/react.webp'
 function ReactIntroIndex() {
   const articles = [
     {
-      id: 'react-basics',
-      title: 'React Basics Q&A',
+      id: 'intro-react-basics',
+      title: 'Intro: React Basics Q&A',
       path: '/react/intro/react-basics',
     },
     {
-      id: 'project',
-      title: 'Project',
+      id: 'intro-project',
+      title: 'Intro: Project',
       path: '/react/intro/project',
+    },
+    {
+      id: 'intermediate-qa',
+      title: 'Intermediate: Intermediate Q&A',
+      path: '/react/intermediate/intermediate-qa',
+    },
+    {
+      id: 'intermediate-project',
+      title: 'Intermediate: Project',
+      path: '/react/intermediate/project',
+    },
+    {
+      id: 'advanced-react-and-django',
+      title: 'Advanced: React and Django',
+      path: '/react/advanced/react-and-django',
+    },
+    {
+      id: 'advanced-react-advanced',
+      title: 'Advanced: React Advanced',
+      path: '/react/advanced/react-advanced',
+    },
+    {
+      id: 'advanced-common-questions',
+      title: 'Advanced: Common Questions',
+      path: '/react/advanced/common-questions',
+    },
+    {
+      id: 'advanced-project',
+      title: 'Advanced: Project',
+      path: '/react/advanced/project',
     },
   ]
 
@@ -25,6 +55,7 @@ function ReactIntroIndex() {
       backLabel="← Back to React Track"
       color="#61DAFB"
       basePath="/react/intro"
+      trackType="react"
     >
       <Outlet />
     </ContentLayout>

@@ -5,23 +5,43 @@ import reactLogo from '../../../assets/react.webp'
 function ReactAdvancedIndex() {
   const articles = [
     {
-      id: 'react-and-django',
-      title: 'React and Django',
+      id: 'intro-react-basics',
+      title: 'Intro: React Basics Q&A',
+      path: '/react/intro/react-basics',
+    },
+    {
+      id: 'intro-project',
+      title: 'Intro: Project',
+      path: '/react/intro/project',
+    },
+    {
+      id: 'intermediate-qa',
+      title: 'Intermediate: Intermediate Q&A',
+      path: '/react/intermediate/intermediate-qa',
+    },
+    {
+      id: 'intermediate-project',
+      title: 'Intermediate: Project',
+      path: '/react/intermediate/project',
+    },
+    {
+      id: 'advanced-react-and-django',
+      title: 'Advanced: React and Django',
       path: '/react/advanced/react-and-django',
     },
     {
-      id: 'react-advanced',
-      title: 'React Advanced',
+      id: 'advanced-react-advanced',
+      title: 'Advanced: React Advanced',
       path: '/react/advanced/react-advanced',
     },
     {
-      id: 'common-questions',
-      title: 'Common Questions',
+      id: 'advanced-common-questions',
+      title: 'Advanced: Common Questions',
       path: '/react/advanced/common-questions',
     },
     {
-      id: 'project',
-      title: 'Project',
+      id: 'advanced-project',
+      title: 'Advanced: Project',
       path: '/react/advanced/project',
     },
   ]
@@ -35,6 +55,7 @@ function ReactAdvancedIndex() {
       backLabel="← Back to Intermediate"
       color="#61DAFB"
       basePath="/react/advanced"
+      trackType="react"
     >
       <Outlet />
     </ContentLayout>

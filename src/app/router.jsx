@@ -26,6 +26,9 @@ import DjangoIntermediateQA from '../pages/DjangoTrack/DjangoIntermediate/Interm
 import DjangoIntermediateProject from '../pages/DjangoTrack/DjangoIntermediate/Project'
 import DjangoAdvancedIndex from '../pages/DjangoTrack/DjangoAdvanced/index'
 import DjangoAdvancedQA from '../pages/DjangoTrack/DjangoAdvanced/AdvancedQA'
+import DjangoRestFramework from '../pages/DjangoTrack/DjangoAdvanced/DjangoRestFramework'
+import DjangoPerformanceTuning from '../pages/DjangoTrack/DjangoAdvanced/DjangoPerformanceTuning'
+import DjangoProduction from '../pages/DjangoTrack/DjangoAdvanced/DjangoProduction'
 import DjangoAdvancedProject from '../pages/DjangoTrack/DjangoAdvanced/Project'
 
 export const router = createBrowserRouter([
@@ -146,6 +149,18 @@ export const router = createBrowserRouter([
       {
         path: 'advanced-qa',
         element: <DjangoAdvancedQA />,
+      },
+      {
+        path: 'django-rest-framework',
+        element: <DjangoRestFramework />,
+      },
+      {
+        path: 'performance-tuning',
+        element: <DjangoPerformanceTuning />,
+      },
+      {
+        path: 'production',
+        element: <DjangoProduction />,
       },
       {
         path: 'project',

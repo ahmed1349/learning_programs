@@ -37,9 +37,9 @@ function ReactTrack() {
 
   const handleLevelStart = (levelId) => {
     const routes = {
-      1: '/react/intro',
-      2: '/react/intermediate',
-      3: '/react/advanced',
+      1: '/react/intro/react-basics',
+      2: '/react/intermediate/intermediate-qa',
+      3: '/react/advanced/react-and-django',
     }
     navigate(routes[levelId] || '/react')
   }
@@ -49,15 +49,13 @@ function ReactTrack() {
       <Navbar />
       <div className="track-container">
         <div className="track-header">
-          <div className="track-logo">
-            <img src={reactLogo} alt="React logo" className="track-logo-image" />
+          <div className="track-header-content">
+            <div className="track-logo">
+              <img src={reactLogo} alt="React logo" className="track-logo-image" />
+            </div>
+            <h1 className="track-title">React.js Track</h1>
           </div>
-          <h1 className="track-title">React.js Track</h1>
         </div>
-        <p className="track-description">
-          Choose your learning level and start your React journey. Progress from basics to advanced concepts.
-        </p>
-        
         <div className="levels-grid">
           {levels.map((level) => (
             <LevelCard
