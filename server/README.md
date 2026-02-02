@@ -1,6 +1,6 @@
 # Django Server
 
-This directory will contain the Django backend server for the Origin Learning platform.
+This directory will contain the Django backend server for the Learning programs platform.
 
 ## Setup (Future)
 

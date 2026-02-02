@@ -18,7 +18,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo" onClick={handleLogoClick}>
-          <span className="logo-text">Origin Learning</span>
+          <span className="logo-text">Learning programs</span>
         </div>
         
         <div className="navbar-links">

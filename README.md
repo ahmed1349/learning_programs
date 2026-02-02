@@ -1,4 +1,4 @@
-# Origin Learning Platform
+# Learning programs
 
 A modern learning platform for programming languages and frameworks.
 

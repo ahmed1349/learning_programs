@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="app home-page">
       <div className="home-container">
-        <h1 className="main-title">Origin Learning</h1>
+        <h1 className="main-title">Learning programs</h1>
         <p className="subtitle">Master Programming Skills at Your Own Pace</p>
         <Button onClick={() => navigate('/topics')} variant="primary" size="large">
           Start to Learn
