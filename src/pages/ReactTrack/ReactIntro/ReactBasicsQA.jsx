@@ -168,7 +168,7 @@ useContext(ThemeContext);`
   return (
     <div className="article-content">
       <div className="article-header">
-        <h1 className="article-title">React.js Track — Introduction</h1>
+        <h1 className="article-title">React.js Track  Introduction</h1>
       </div>
 
       <div className="article-body">
