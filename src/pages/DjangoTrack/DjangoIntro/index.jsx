@@ -5,6 +5,11 @@ import djangoLogo from '../../../assets/django.png'
 function DjangoIntroIndex() {
   const articles = [
     {
+      id: 'intro-links',
+      title: 'Intro: Links',
+      path: '/django/intro/links',
+    },
+    {
       id: 'intro-django-basics',
       title: 'Intro: Django Basics Q&A',
       path: '/django/intro/django-basics',

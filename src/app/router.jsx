@@ -19,6 +19,7 @@ import JsIntermediate from '../pages/JsTrack/JsIntermediate'
 import JsAdvanced from '../pages/JsTrack/JsAdvanced'
 import DjangoTrack from '../pages/DjangoTrack/DjangoTrack'
 import DjangoIntroIndex from '../pages/DjangoTrack/DjangoIntro/index'
+import DjangoIntroLinks from '../pages/DjangoTrack/DjangoIntro/Links'
 import DjangoBasicsQA from '../pages/DjangoTrack/DjangoIntro/DjangoBasicsQA'
 import DjangoIntroProject from '../pages/DjangoTrack/DjangoIntro/Project'
 import DjangoIntermediateIndex from '../pages/DjangoTrack/DjangoIntermediate/index'
@@ -118,6 +119,10 @@ export const router = createBrowserRouter([
     path: '/django/intro',
     element: <DjangoIntroIndex />,
     children: [
+      {
+        path: 'links',
+        element: <DjangoIntroLinks />,
+      },
       {
         path: 'django-basics',
         element: <DjangoBasicsQA />,

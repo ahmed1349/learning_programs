@@ -1,0 +1,74 @@
+.links-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0;
+}
+
+.links-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.link-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  border: 2px solid #E8E8E8;
+  border-radius: 12px;
+  padding: 1.25rem 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #092E20;
+}
+
+.link-card:hover {
+  box-shadow: 0 4px 16px rgba(9, 46, 32, 0.12);
+  border-color: #092E20;
+}
+
+.link-card-title {
+  font-size: 1.25rem;
+  color: #092E20;
+  font-weight: 600;
+  margin: 0;
+  min-width: 100px;
+}
+
+.link-card-line {
+  flex: 1;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.link-card-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.link-card-button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.link-card-button:hover {
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .link-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .link-card-title {
+    min-width: 0;
+  }
+}
