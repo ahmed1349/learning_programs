@@ -9,6 +9,7 @@ function Sidebar({
   title, 
   logo, 
   articles, 
+  globalArticles = [],
   backPath, 
   backLabel,
   color = '#61DAFB',
@@ -120,6 +121,27 @@ function Sidebar({
         </div>
       
       <nav className="sidebar-nav">
+        {globalArticles.length > 0 && (
+          <ul className="level-list global-articles-list">
+            <li className="level-group">
+              <ul className="article-list">
+                {globalArticles.map((article) => {
+                  const isActive = location.pathname === article.path
+                  return (
+                    <li key={article.id} className="article-item">
+                      <button
+                        className={`article-link ${isActive ? 'active' : ''} global-article-link`}
+                        onClick={() => navigate(article.path)}
+                      >
+                        {article.title}
+                      </button>
+                    </li>
+                  )
+                })}
+              </ul>
+            </li>
+          </ul>
+        )}
         <ul className="level-list">
           {levelOrder.map((level) => {
             if (!groupedArticles[level]) return null

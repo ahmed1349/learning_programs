@@ -3,6 +3,10 @@ import ContentLayout from '../../../components/layout/ContentLayout/ContentLayou
 import djangoLogo from '../../../assets/django.png'
 
 function DjangoIntermediateIndex() {
+  const globalArticles = [
+    { id: 'django-links', title: 'Links', path: '/django/intro/links' },
+  ]
+
   const articles = [
     {
       id: 'intro-django-basics',
@@ -56,6 +60,7 @@ function DjangoIntermediateIndex() {
       title="Django Intermediate"
       logo={djangoLogo}
       articles={articles}
+      globalArticles={globalArticles}
       backPath="/django/intro"
       backLabel="← Back to Intro"
       color="#092E20"

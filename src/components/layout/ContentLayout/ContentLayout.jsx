@@ -7,6 +7,7 @@ function ContentLayout({
   title, 
   logo, 
   articles, 
+  globalArticles = [],
   backPath, 
   backLabel,
   color = '#61DAFB',
@@ -25,6 +26,7 @@ function ContentLayout({
           title={title}
           logo={logo}
           articles={articles}
+          globalArticles={globalArticles}
           backPath={backPath}
           backLabel={backLabel}
           color={color}

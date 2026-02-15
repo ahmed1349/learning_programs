@@ -3,12 +3,11 @@ import ContentLayout from '../../../components/layout/ContentLayout/ContentLayou
 import djangoLogo from '../../../assets/django.png'
 
 function DjangoIntroIndex() {
+  const globalArticles = [
+    { id: 'django-links', title: 'Links', path: '/django/intro/links' },
+  ]
+
   const articles = [
-    {
-      id: 'intro-links',
-      title: 'Intro: Links',
-      path: '/django/intro/links',
-    },
     {
       id: 'intro-django-basics',
       title: 'Intro: Django Basics Q&A',
@@ -61,6 +60,7 @@ function DjangoIntroIndex() {
       title="Django Intro"
       logo={djangoLogo}
       articles={articles}
+      globalArticles={globalArticles}
       backPath="/django"
       backLabel="← Back to Django Track"
       color="#092E20"

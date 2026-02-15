@@ -23,9 +23,11 @@ import DjangoIntroLinks from '../pages/DjangoTrack/DjangoIntro/Links'
 import DjangoBasicsQA from '../pages/DjangoTrack/DjangoIntro/DjangoBasicsQA'
 import DjangoIntroProject from '../pages/DjangoTrack/DjangoIntro/Project'
 import DjangoIntermediateIndex from '../pages/DjangoTrack/DjangoIntermediate/index'
+import DjangoIntermediateLinks from '../pages/DjangoTrack/DjangoIntermediate/Links'
 import DjangoIntermediateQA from '../pages/DjangoTrack/DjangoIntermediate/IntermediateQA'
 import DjangoIntermediateProject from '../pages/DjangoTrack/DjangoIntermediate/Project'
 import DjangoAdvancedIndex from '../pages/DjangoTrack/DjangoAdvanced/index'
+import DjangoAdvancedLinks from '../pages/DjangoTrack/DjangoAdvanced/Links'
 import DjangoAdvancedQA from '../pages/DjangoTrack/DjangoAdvanced/AdvancedQA'
 import DjangoRestFramework from '../pages/DjangoTrack/DjangoAdvanced/DjangoRestFramework'
 import DjangoPerformanceTuning from '../pages/DjangoTrack/DjangoAdvanced/DjangoPerformanceTuning'
@@ -138,6 +140,10 @@ export const router = createBrowserRouter([
     element: <DjangoIntermediateIndex />,
     children: [
       {
+        path: 'links',
+        element: <DjangoIntermediateLinks />,
+      },
+      {
         path: 'intermediate-qa',
         element: <DjangoIntermediateQA />,
       },
@@ -151,6 +157,10 @@ export const router = createBrowserRouter([
     path: '/django/advanced',
     element: <DjangoAdvancedIndex />,
     children: [
+      {
+        path: 'links',
+        element: <DjangoAdvancedLinks />,
+      },
       {
         path: 'advanced-qa',
         element: <DjangoAdvancedQA />,
