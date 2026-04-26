@@ -3,6 +3,10 @@ import ContentLayout from '../../../components/layout/ContentLayout/ContentLayou
 import reactLogo from '../../../assets/react.webp'
 
 function ReactIntermediateIndex() {
+  const globalArticles = [
+    { id: 'react-links', title: 'Links', path: '/react/intro/links' },
+  ]
+
   const articles = [
     {
       id: 'intro-react-basics',
@@ -51,6 +55,7 @@ function ReactIntermediateIndex() {
       title="React Intermediate"
       logo={reactLogo}
       articles={articles}
+      globalArticles={globalArticles}
       backPath="/react/intro"
       backLabel="← Back to Intro"
       color="#61DAFB"

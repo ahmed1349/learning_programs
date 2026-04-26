@@ -3,6 +3,10 @@ import ContentLayout from '../../../components/layout/ContentLayout/ContentLayou
 import reactLogo from '../../../assets/react.webp'
 
 function ReactIntroIndex() {
+  const globalArticles = [
+    { id: 'react-links', title: 'Links', path: '/react/intro/links' },
+  ]
+
   const articles = [
     {
       id: 'intro-react-basics',
@@ -51,6 +55,7 @@ function ReactIntroIndex() {
       title="React Intro"
       logo={reactLogo}
       articles={articles}
+      globalArticles={globalArticles}
       backPath="/react"
       backLabel="← Back to React Track"
       color="#61DAFB"

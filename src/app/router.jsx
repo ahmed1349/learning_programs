@@ -4,6 +4,7 @@ import Topics from '../pages/Topics/Topics'
 import ReactTrack from '../pages/ReactTrack/ReactTrack'
 import ReactIntroIndex from '../pages/ReactTrack/ReactIntro/index'
 import ReactBasicsQA from '../pages/ReactTrack/ReactIntro/ReactBasicsQA'
+import ReactIntroLinks from '../pages/ReactTrack/ReactIntro/Links'
 import ReactIntroProject from '../pages/ReactTrack/ReactIntro/Project'
 import ReactIntermediateIndex from '../pages/ReactTrack/ReactIntermediate/index'
 import IntermediateQA from '../pages/ReactTrack/ReactIntermediate/IntermediateQA'
@@ -17,6 +18,7 @@ import JsTrack from '../pages/JsTrack/JsTrack'
 import JsIntro from '../pages/JsTrack/JsIntro'
 import JsIntermediate from '../pages/JsTrack/JsIntermediate'
 import JsAdvanced from '../pages/JsTrack/JsAdvanced'
+import JsLinks from '../pages/JsTrack/JsLinks'
 import DjangoTrack from '../pages/DjangoTrack/DjangoTrack'
 import DjangoIntroIndex from '../pages/DjangoTrack/DjangoIntro/index'
 import DjangoIntroLinks from '../pages/DjangoTrack/DjangoIntro/Links'
@@ -51,6 +53,10 @@ export const router = createBrowserRouter([
     path: '/react/intro',
     element: <ReactIntroIndex />,
     children: [
+      {
+        path: 'links',
+        element: <ReactIntroLinks />,
+      },
       {
         path: 'react-basics',
         element: <ReactBasicsQA />,
@@ -112,6 +118,10 @@ export const router = createBrowserRouter([
   {
     path: '/javascript/advanced',
     element: <JsAdvanced />,
+  },
+  {
+    path: '/javascript/links',
+    element: <JsLinks />,
   },
   {
     path: '/django',

@@ -185,7 +185,7 @@ function ReactIntroProject() {
 
           <div className="project-navigation">
             <Button 
-              onClick={() => navigate('/react/intermediate')}
+              onClick={() => navigate('/react/intermediate/intermediate-qa')}
               variant="primary"
               size="large"
             >

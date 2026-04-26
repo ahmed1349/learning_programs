@@ -73,6 +73,9 @@ function JsTrack() {
         </div>
 
         <div className="track-actions">
+          <Button onClick={() => navigate('/javascript/links')} variant="primary">
+            Links
+          </Button>
           <Button onClick={() => navigate('/topics')} variant="outline">
             ← Back to Topics
           </Button>

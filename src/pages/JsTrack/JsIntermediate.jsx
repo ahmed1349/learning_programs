@@ -3,6 +3,7 @@ import Button from '../../components/ui/Button/Button'
 import Navbar from '../../components/layout/Navbar/Navbar'
 import jsLogo from '../../assets/js.png'
 import './JsIntermediate.css'
+import './JsLinksShortcut.css'
 
 function JsIntermediate() {
   const navigate = useNavigate()
@@ -154,6 +155,11 @@ function JsIntermediate() {
   return (
     <div className="app">
       <Navbar />
+      <div className="js-links-fixed">
+        <Button onClick={() => navigate('/javascript/links')} variant="primary">
+          Links
+        </Button>
+      </div>
       <div className="level-page-container">
         <div className="level-header">
           <div className="level-logo">

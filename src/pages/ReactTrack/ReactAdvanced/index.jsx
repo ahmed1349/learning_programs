@@ -3,6 +3,10 @@ import ContentLayout from '../../../components/layout/ContentLayout/ContentLayou
 import reactLogo from '../../../assets/react.webp'
 
 function ReactAdvancedIndex() {
+  const globalArticles = [
+    { id: 'react-links', title: 'Links', path: '/react/intro/links' },
+  ]
+
   const articles = [
     {
       id: 'intro-react-basics',
@@ -51,6 +55,7 @@ function ReactAdvancedIndex() {
       title="React Advanced"
       logo={reactLogo}
       articles={articles}
+      globalArticles={globalArticles}
       backPath="/react/intermediate"
       backLabel="← Back to Intermediate"
       color="#61DAFB"

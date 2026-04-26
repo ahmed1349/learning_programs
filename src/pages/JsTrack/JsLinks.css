@@ -1,0 +1,66 @@
+.js-links-subtitle {
+  margin: 0;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.js-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto 2rem;
+  max-width: 900px;
+}
+
+.js-link-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-left: 4px solid #f7df1e;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+}
+
+.js-link-title {
+  margin: 0;
+  min-width: 110px;
+  font-size: 1.2rem;
+  color: #1f1f1f;
+}
+
+.js-link-description {
+  flex: 1;
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.js-link-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.js-link-button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.js-link-button:hover {
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .js-link-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .js-link-title {
+    min-width: 0;
+  }
+}
